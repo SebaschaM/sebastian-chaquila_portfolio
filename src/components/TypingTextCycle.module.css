@@ -1,0 +1,44 @@
+.text_job_container {
+  display: flex;
+  column-gap: 1rem;
+  color: #00c97f;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.25rem;
+  margin-top: 3px;
+  height: 0.8em;
+  background-color: #ffffff; /* Color del cursor */
+  animation: cursor-blink 0.7s infinite;
+}
+
+.inner_text {
+  display: inline-block;
+  font-size: 2.5rem;
+  transition: width 0.5s ease-out, opacity 0.5s ease-out;
+  overflow: hidden;
+  background: linear-gradient(
+    to left,
+    #c8df00,
+    #00a86b
+  ); /* Puedes ajustar los colores según tus preferencias */
+  background-clip: text;
+
+  color: transparent;
+  white-space: nowrap;
+}
+
+@keyframes cursor-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ANIMACION */
